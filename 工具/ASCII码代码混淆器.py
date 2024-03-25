@@ -1,6 +1,6 @@
 #leeya_bug
 
-code = input('请输入命令: ')
+code = input('请输入代码: ')
 nums = input('请输入混淆次数(默认为1): ')
 nums = int(nums) if nums != '' else 1
 
