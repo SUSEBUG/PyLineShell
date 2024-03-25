@@ -16,11 +16,11 @@ PyLineShell是一个基于Python3的个人Shell Payload库，适用于在Python 
 
 使用Python生成一个普通版执行命令的Payload
 
-![测试1](https://s21.ax1x.com/2024/03/25/pF4It1g.png)
+![测试1](https://raw.githubusercontent.com/Leeyangee/PyLineShell/main/%E6%B5%8B%E8%AF%951.png)
 
 使用Python ASCII码代码混淆器
 
-![测试2](https://s21.ax1x.com/2024/03/25/pF4INcQ.png)
+![测试2](https://raw.githubusercontent.com/Leeyangee/PyLineShell/main/%E6%B5%8B%E8%AF%952.png)
 
 # 鸣谢
 
