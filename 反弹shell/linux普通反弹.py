@@ -1,6 +1,7 @@
 #by leeya_bug
 
 #适用于eval、exec等函数
+#在某些发行版上有可能不成功(例如Kali Linux)
 
 #Payload: 
 if False:

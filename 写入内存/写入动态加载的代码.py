@@ -14,12 +14,14 @@ if False:
 FUNC_NAME = 'ZzRTSoDE'
 
 import base64
+
 path = input('请输入要写入的代码文件路径(默认test.py): ')
 path = path if path != '' else 'test.py'
 with open(path, 'r') as f:
     a = f.read()
+
 a0 = base64.b64encode(a.encode()).decode()
-print('写入动态代码命令: ')
+print('写入动态代码Payload: ')
 print(f'''setattr(__loader__,'{FUNC_NAME}',lambda :exec(__import__('base64').b64decode('{a0}')))''')
-print('调用动态代码命令: ')
+print('执行动态代码Payload: ')
 print(f'''__loader__.{FUNC_NAME}()''')

